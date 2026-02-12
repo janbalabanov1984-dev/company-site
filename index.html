@@ -3,29 +3,466 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>XcoudLabs</title>
+  <title>XcoudLabs – Modern Web Experiences for Ambitious Teams</title>
+  <meta name="description" content="XcoudLabs builds modern, fast and reliable web experiences for companies that care about design, performance and results.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Page background & glow layers are handled in CSS -->
 
-  <header>
-    <h1>XcoudLabs</h1>
-    <p>We build modern websites for companies.</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand">
+        <span class="brand-mark">XL</span>
+        <span class="brand-text">
+          <span class="brand-name">XcoudLabs</span>
+          <span class="brand-tagline">Digital product studio</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why-us">Why us</a></li>
+          <li><a href="#technologies">Technologies</a></li>
+          <li><a href="#stats">Stats</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact" class="nav-cta">Let’s talk</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>What we do</h2>
-    <ul>
-      <li>Company websites</li>
-      <li>Landing pages</li>
-      <li>Deployment & hosting</li>
-    </ul>
-  </section>
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="section hero" aria-labelledby="hero-title">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Modern websites. Real business impact.</p>
+          <h1 id="hero-title" class="hero-title reveal">
+            We design & build web experiences that feel <span class="accent-gradient">effortless</span>.
+          </h1>
+          <p class="hero-subtitle reveal">
+            XcoudLabs is a small, focused team helping companies launch
+            fast, reliable and beautiful websites — without the complexity of big agencies.
+          </p>
+          <div class="hero-actions reveal">
+            <a href="#contact" class="btn btn-primary">
+              Book a free discovery call
+              <span class="btn-glow"></span>
+            </a>
+            <a href="#services" class="btn btn-ghost">
+              View services
+            </a>
+          </div>
+          <div class="hero-meta reveal">
+            <span class="pill">10+ shipped projects</span>
+            <span class="pill">Response in &lt; 24 hours</span>
+            <span class="pill">Based in EU · working globally</span>
+          </div>
+        </div>
 
-  <section>
-    <h2>Contact</h2>
-    <button id="contactBtn">Contact us</button>
-  </section>
+        <aside class="hero-panel reveal" aria-label="Highlights">
+          <div class="hero-card">
+            <h2>Websites that actually convert</h2>
+            <p>
+              From idea to deployment, we handle UX, UI, development and hosting so you can focus on
+              growing your business.
+            </p>
+            <ul class="hero-list">
+              <li>Marketing & SaaS landing pages</li>
+              <li>Company & product websites</li>
+              <li>Launch pages & micro-sites</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SERVICES / WHAT WE DO -->
+    <section id="services" class="section" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">What we do</p>
+          <h2 id="services-title">From first sketch to live deploy</h2>
+          <p class="section-subtitle">
+            We help teams move from “we should fix our website” to “this is driving real results”.
+          </p>
+        </header>
+
+        <div class="grid grid-3 cards">
+          <article class="card reveal">
+            <h3>Strategy & UX</h3>
+            <p>
+              We clarify your message, map user journeys and structure content so visitors instantly
+              understand what you offer.
+            </p>
+            <ul class="card-list">
+              <li>UX workshops & wireframes</li>
+              <li>Content structure & messaging</li>
+              <li>Conversion-focused flows</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3>Interface & visual design</h3>
+            <p>
+              Clean, modern UI that makes your brand feel premium — without unnecessary visual noise.
+            </p>
+            <ul class="card-list">
+              <li>Design systems & components</li>
+              <li>Responsive layouts</li>
+              <li>Interaction & motion design</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3>Development & launch</h3>
+            <p>
+              Lightweight, maintainable frontends built with semantic HTML, modern CSS and vanilla JS.
+            </p>
+            <ul class="card-list">
+              <li>Static sites & landing pages</li>
+              <li>Hosting & deployment setup</li>
+              <li>Performance & accessibility</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why-us" class="section section-alt" aria-labelledby="why-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Why choose XcoudLabs</p>
+          <h2 id="why-title">A small team with senior-level thinking</h2>
+          <p class="section-subtitle">
+            We combine product thinking, UX and engineering to ship sites that are fast, focused and easy to maintain.
+          </p>
+        </header>
+
+        <div class="grid grid-4 cards">
+          <article class="card reveal">
+            <h3>Senior expertise, no fluff</h3>
+            <p>
+              Work directly with experienced designers and developers. No bloated account management, just people who ship.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Clear process & timelines</h3>
+            <p>
+              Collaborative workshops, fast prototypes and weekly check‑ins keep everyone aligned and on schedule.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Performance as a feature</h3>
+            <p>
+              We avoid heavy frameworks when they are not needed. Your site loads fast and feels responsive on any device.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <h3>End‑to‑end partnership</h3>
+            <p>
+              From domain and hosting to launch checklists, we stay with you until everything is live and stable.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGIES -->
+    <section id="technologies" class="section" aria-labelledby="tech-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Technologies we use</p>
+          <h2 id="tech-title">Modern, battle‑tested foundations</h2>
+          <p class="section-subtitle">
+            We keep the stack intentionally simple and robust, choosing the right tools for your stage and needs.
+          </p>
+        </header>
+
+        <div class="tech-grid">
+          <div class="tech-item reveal">
+            <span class="tech-icon">&lt;/&gt;</span>
+            <div>
+              <h3>HTML5</h3>
+              <p>Semantic, accessible structures that search engines and screen readers understand.</p>
+            </div>
+          </div>
+          <div class="tech-item reveal">
+            <span class="tech-icon">🎨</span>
+            <div>
+              <h3>Modern CSS</h3>
+              <p>Fluid layouts, custom properties, and animations without layout jank.</p>
+            </div>
+          </div>
+          <div class="tech-item reveal">
+            <span class="tech-icon">⚡</span>
+            <div>
+              <h3>Vanilla JS</h3>
+              <p>Just‑enough interactivity: smooth scrolling, forms, and meaningful micro‑interactions.</p>
+            </div>
+          </div>
+          <div class="tech-item reveal">
+            <span class="tech-icon">☁️</span>
+            <div>
+              <h3>Cloud hosting</h3>
+              <p>Static hosting, CDN set‑up and basic monitoring baked into every project.</p>
+            </div>
+          </div>
+          <div class="tech-item reveal">
+            <span class="tech-icon">Git</span>
+            <div>
+              <h3>Git & CI</h3>
+              <p>Version control and simple deployment pipelines so updates are safe and repeatable.</p>
+            </div>
+          </div>
+          <div class="tech-item reveal">
+            <span class="tech-icon">🔐</span>
+            <div>
+              <h3>Best practices</h3>
+              <p>Security, accessibility and performance baked in from the first commit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats" class="section stats" aria-label="XcoudLabs in numbers">
+      <div class="container stats-layout">
+        <div class="stats-intro reveal">
+          <p class="eyebrow">Some quick numbers</p>
+          <h2>Lean team, outsized impact.</h2>
+          <p>We focus on a small number of projects at a time so every launch gets the attention it deserves.</p>
+        </div>
+        <dl class="stats-grid">
+          <div class="stat reveal">
+            <dt>10+</dt>
+            <dd>Projects shipped</dd>
+          </div>
+          <div class="stat reveal">
+            <dt>&lt; 3 weeks</dt>
+            <dd>Average time to launch</dd>
+          </div>
+          <div class="stat reveal">
+            <dt>95%</dt>
+            <dd>Clients from referrals</dd>
+          </div>
+          <div class="stat reveal">
+            <dt>100%</dt>
+            <dd>Remote friendly</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section-alt" aria-labelledby="faq-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Questions teams often ask</h2>
+          <p class="section-subtitle">
+            Don’t see your question here? Reach out and we’ll respond within one business day.
+          </p>
+        </header>
+
+        <div class="faq-list" role="list">
+          <article class="faq-item reveal">
+            <h3>
+              <button type="button"
+                      class="faq-trigger"
+                      aria-expanded="false"
+                      aria-controls="faq-1">
+                How long does a typical project take?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div id="faq-1" class="faq-panel" role="region" aria-hidden="true">
+              <p>
+                Most marketing or company websites take between 2–4 weeks from kickoff to launch,
+                depending on content readiness and feedback speed.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <h3>
+              <button type="button"
+                      class="faq-trigger"
+                      aria-expanded="false"
+                      aria-controls="faq-2">
+                Do you work with existing brands or only new ones?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div id="faq-2" class="faq-panel" role="region" aria-hidden="true">
+              <p>
+                Both. We can plug into your existing brand guidelines or help refine your visual language
+                specifically for the web.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <h3>
+              <button type="button"
+                      class="faq-trigger"
+                      aria-expanded="false"
+                      aria-controls="faq-3">
+                Can you help after launch?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div id="faq-3" class="faq-panel" role="region" aria-hidden="true">
+              <p>
+                Yes. We can stay on as a lightweight partner for iterative improvements, new pages and
+                speed or UX optimizations.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item reveal">
+            <h3>
+              <button type="button"
+                      class="faq-trigger"
+                      aria-expanded="false"
+                      aria-controls="faq-4">
+                What does collaboration look like?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div id="faq-4" class="faq-panel" role="region" aria-hidden="true">
+              <p>
+                We typically work in weekly cycles with async updates, shared documents and short,
+                focused calls when decisions are needed.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section id="cta" class="section cta" aria-labelledby="cta-title">
+      <div class="container cta-layout reveal">
+        <div>
+          <h2 id="cta-title">Ready to level up your website?</h2>
+          <p>
+            Tell us a bit about your company and we’ll send back a short, no‑nonsense proposal with
+            scope, timelines and pricing.
+          </p>
+        </div>
+        <div class="cta-actions">
+          <a href="#contact" class="btn btn-primary">
+            Start a project
+            <span class="btn-glow"></span>
+          </a>
+          <button type="button" class="btn btn-ghost" id="cta-email-btn">
+            Copy email
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt contact" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <header class="section-header reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let’s discuss your next launch</h2>
+          <p class="section-subtitle">
+            Share a few details and we’ll get back to you with next steps within one business day.
+          </p>
+        </header>
+
+        <div class="contact-columns">
+          <form id="contact-form" class="contact-form reveal" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+              <p class="field-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="email">Work email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+              <p class="field-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" autocomplete="organization">
+              <p class="field-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="message">Project details</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+              <p class="field-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field-inline">
+              <label class="checkbox">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <span>Send me very occasional product updates.</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              Send message
+              <span class="btn-glow"></span>
+            </button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact-aside reveal" aria-label="Contact information">
+            <div class="contact-card">
+              <h3>Prefer email?</h3>
+              <p>
+                Reach us directly at
+                <a href="mailto:hello@xcoudlabs.ai">hello@xcoudlabs.ai</a>.
+              </p>
+              <p class="contact-note">
+                Include links to your current site and any deadlines you’re working with — that helps us respond with concrete options.
+              </p>
+              <ul class="contact-list">
+                <li>Based in Europe, working across time zones</li>
+                <li>Available for retainers and project work</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-main">
+        <p class="footer-brand">XcoudLabs</p>
+        <p class="footer-text">
+          Building modern, performant websites for teams that care about UX, craft and results.
+        </p>
+      </div>
+      <div class="footer-meta">
+        <p>&copy; <span id="year"></span> XcoudLabs. All rights reserved.</p>
+        <p class="footer-links">
+          <a href="#hero">Back to top</a>
+        </p>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
