@@ -230,6 +230,23 @@ p {
   margin: 0;
 }
 
+.page-title {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  line-height: 1.1;
+  margin-top: 0.7rem;
+}
+
+.page-intro {
+  margin-top: 1rem;
+  color: var(--color-text-soft);
+  max-width: 36rem;
+  font-size: 0.98rem;
+}
+
+.page-hero {
+  padding-top: calc(var(--space-xl) + 0.5rem);
+}
+
 /* ========== HEADER & NAV ========== */
 
 .site-header {
@@ -382,6 +399,11 @@ p {
 
 .nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(2) {
   transform: rotate(-42deg) translateY(-5px);
+}
+
+.nav-link--active {
+  color: var(--color-text);
+  background: rgba(15, 23, 42, 0.9);
 }
 
 /* ========== HERO ========== */
@@ -558,6 +580,24 @@ p {
 .card:hover::after {
   opacity: 1;
   transform: translateY(0);
+}
+
+.section-link-row {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.inline-link {
+  font-size: 0.9rem;
+  color: var(--color-primary-strong);
+  text-decoration: none;
+}
+
+.inline-link:hover,
+.inline-link:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* ========== TECHNOLOGIES ========== */
@@ -830,7 +870,8 @@ label {
 }
 
 input,
-textarea {
+textarea,
+select {
   width: 100%;
   padding: 0.6rem 0.7rem;
   border-radius: var(--radius-sm);
@@ -844,7 +885,8 @@ textarea {
 }
 
 input:focus-visible,
-textarea:focus-visible {
+textarea:focus-visible,
+select:focus-visible {
   border-color: rgba(129, 140, 248, 0.95);
   box-shadow: 0 0 0 1px rgba(129, 140, 248, 0.8), 0 0 0 6px rgba(55, 48, 163, 0.35);
   background-color: rgba(15, 23, 42, 1);
@@ -931,6 +973,46 @@ textarea::placeholder {
   padding-left: 1.1rem;
   font-size: 0.86rem;
   color: var(--color-muted);
+}
+
+.about-layout {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  .about-layout {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.about-block {
+  padding: 1.3rem 1.2rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-subtle);
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.98), rgba(15, 23, 42, 1));
+  box-shadow: 0 16px 38px rgba(15, 23, 42, 0.85);
+}
+
+.about-block p {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--color-text-soft);
+}
+
+.form-header {
+  margin-bottom: 1.2rem;
+}
+
+.form-header h2 {
+  font-size: 1.15rem;
+}
+
+.form-header p {
+  margin-top: 0.4rem;
+  color: var(--color-text-soft);
+  font-size: 0.9rem;
 }
 
 /* ========== BUTTONS ========== */

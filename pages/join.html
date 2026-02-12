@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join us – XcoudLabs</title>
+  <meta name="description" content="Join XcoudLabs as a designer, engineer or product partner. Share your details and we’ll reach out if there’s a strong fit.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body data-page="join">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">
+        <span class="brand-mark">XL</span>
+        <span class="brand-text">
+          <span class="brand-name">XcoudLabs</span>
+          <span class="brand-tagline">Digital product studio</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="services.html" class="nav-link" data-page="services">Services</a></li>
+          <li><a href="about.html" class="nav-link" data-page="about">Why us</a></li>
+          <li><a href="about.html#technologies" class="nav-link" data-page="about">Technologies</a></li>
+          <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
+          <li><a href="join.html" class="nav-link" data-page="join">Join us</a></li>
+          <li><a href="contact.html" class="nav-cta">Book a discovery call</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-hero" aria-labelledby="join-title">
+      <div class="container">
+        <p class="eyebrow reveal">Join us</p>
+        <h1 id="join-title" class="page-title reveal">Work with XcoudLabs</h1>
+        <p class="page-intro reveal">
+          We occasionally partner with independent designers, developers and product people on client projects.
+          If our approach resonates, we’d love to hear from you.
+        </p>
+      </div>
+    </section>
+
+    <section class="section contact" aria-labelledby="join-form-title">
+      <div class="container contact-layout">
+        <div class="contact-columns">
+          <form id="join-form" class="contact-form reveal" novalidate>
+            <header class="form-header">
+              <h2 id="join-form-title">Tell us a bit about you</h2>
+              <p>Share the basics and a short note — we’ll be in touch if there’s a good match.</p>
+            </header>
+
+            <div class="field">
+              <label for="join-full-name">Full name<span aria-hidden="true"> *</span></label>
+              <input id="join-full-name" name="fullName" type="text" autocomplete="name" required>
+              <p class="field-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="join-email">Email<span aria-hidden="true"> *</span></label>
+              <input id="join-email" name="email" type="email" autocomplete="email" required>
+              <p class="field-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="join-age">Age (optional)</label>
+              <input id="join-age" name="age" type="number" min="0" inputmode="numeric">
+              <p class="field-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="join-role">Role you’re interested in</label>
+              <select id="join-role" name="role">
+                <option value="">Select a role</option>
+                <option value="designer">Designer</option>
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+                <option value="pm">Product manager</option>
+                <option value="other">Other</option>
+              </select>
+              <p class="field-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="join-availability">Availability</label>
+              <select id="join-availability" name="availability">
+                <option value="">Select availability</option>
+                <option value="full-time">Full‑time</option>
+                <option value="part-time">Part‑time</option>
+                <option value="contract">Contract</option>
+              </select>
+              <p class="field-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="join-start-date">Earliest start date</label>
+              <input id="join-start-date" name="startDate" type="date">
+              <p class="field-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="join-message">Short message<span aria-hidden="true"> *</span></label>
+              <textarea id="join-message" name="message" rows="4" required></textarea>
+              <p class="field-error" aria-live="polite"></p>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              Send your details
+              <span class="btn-glow"></span>
+            </button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact-aside reveal" aria-label="What to expect">
+            <div class="contact-card">
+              <h3>What happens next</h3>
+              <p>
+                We’ll review your information and, if there’s a strong fit for current or upcoming projects,
+                we’ll reach out to schedule a short call.
+              </p>
+              <p class="contact-note">
+                Prefer email? Reach us at
+                <a href="mailto:hello@xcoudlabs.ai">hello@xcoudlabs.ai</a> and include links to your work.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-main">
+        <p class="footer-brand">XcoudLabs</p>
+        <p class="footer-text">
+          Building modern, performant websites for teams that care about UX, craft and results.
+        </p>
+      </div>
+      <div class="footer-meta">
+        <p>&copy; <span id="year"></span> XcoudLabs. All rights reserved.</p>
+        <p class="footer-links">
+          <a href="../index.html">Home</a> ·
+          <a href="services.html">Services</a> ·
+          <a href="about.html">About</a> ·
+          <a href="join.html">Join us</a> ·
+          <a href="contact.html">Contact</a> ·
+          <a href="mailto:hello@xcoudlabs.ai">hello@xcoudlabs.ai</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
+
